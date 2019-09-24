@@ -18,36 +18,22 @@ of the side panels will be hinged, allowing a user to open it up and peek at the
 Tentative parts list:
 
     - PCB
-    
     - ATMEGA4809 Microcontroller
-    
     - 7 buttons: hour, minute, alarm, day, month, year, alarm stop.
-    
     - 1 20x4 LED display
-    
     - 1 speaker and/or alarm IC
-    
     - 1 32k crystal oscillator
-    
     - 2 thin wood panels (for front display and top button array)
-    
     - 3 thick wood surfaces (2x4?) (for side panels and bottom)
-    
     - 4 rubber feet
-    
     - leads to connect the buttons to the PCB
     
     
 Tentative tool list:
 
     - Atmel ICE uC programmer
-    
     - Atmel Studio IDE
-    
     - Large breadboard for testing, prototyping, and programming
-    
     - Express PCB/SCH for schematic and PCB design
-    
     - Logic probe to test high/low signals on the uC
-    
     - LEDs to test program functions
