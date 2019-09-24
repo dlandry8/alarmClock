@@ -5,7 +5,7 @@ This is a custom alarm clock powered by a Microchip/Atmel microcontroller. This 
     - How to program using an IDE focused on embedded hardware (Atmel Studio)
     - How to integrate a uC that's NOT a development board.
     
-I absolutely loved my engineering classes and my embedded systems class at UW! However, they spoiled us by basically letting us use Arduinos/RPIs/TIs for all of our projects. Thus, I never learned how to use a programmer to program a microcontroller. The aim of this project is:
+I absolutely loved my engineering classes and my embedded systems class at UW! However, I only ever used Arduinos/RPIs/TIs for all of my projects. Thus, I never learned how to use a programmer to program a microcontroller. The aim of this project is:
 
     - Meet my above learning goals
     - Have a fully functional alarm clock for my room
