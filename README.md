@@ -24,8 +24,10 @@ Tentative parts list:
     - 1 speaker and/or alarm IC
     - 1 32k crystal oscillator
     - 2 thin wood panels (for front display and top button array)
-    - 3 thick wood surfaces (2x4?) (for side panels and bottom)
+    - 4 thick wood surfaces (2x4?) (for side panels, back, and bottom)
     - 4 rubber feet
+    - 2 metal hinges
+    - 1 small metal door knob
     - leads to connect the buttons to the PCB
     
     
