@@ -29,6 +29,9 @@ Tentative parts list:
     - 2 metal hinges
     - 1 small metal door knob
     - leads to connect the buttons to the PCB
+    - box mounted power adapter
+    - lead connecting power adapter to the PCB
+    - 5V output wallwart
     
     
 Tentative tool list:
@@ -39,3 +42,4 @@ Tentative tool list:
     - Express PCB/SCH for schematic and PCB design
     - Logic probe to test high/low signals on the uC
     - LEDs to test program functions
+    - 5V power supply
