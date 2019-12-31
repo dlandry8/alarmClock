@@ -4,6 +4,28 @@
 
 The alarm clock is controlled by IC2, the ATMEGA 4809 microcontroller.
 
+|Pin|Pin Name|Input or Output|Function           |
+|---|--------|---------------|-------------------|
+|1  |PC0     |Input (int)    |toggle1 button     |
+|2  |PC1     |Input (int)    |toggle2 button     |
+|5  |VDD     |N/A            |+5V                |
+|6  |GND     |N/A            |Ground             |
+|9  |PD0     |Input (int)    |Hour button        |
+|10 |PD1     |Input (int)    |Minute button      |
+|11 |PD2     |Input          |alarm1 button      |
+|12 |PD3     |Input (int)    |Year button        |
+|13 |PD4     |Input (int)    |Month button       |
+|14 |PD5     |Input (int)    |Day button         |
+|15 |PD5     |Input          |alarm2 button      |
+|16 |PD7     |Input (int)    |stop button        |
+|18 |GND     |N/A            |Ground             |
+|25 |PF2     |Input (int)    |second timer       |
+|31 |VDD     |N/A            |+5V                |
+|32 |GND     |N/A            |Ground             |
+|35 |PA2     |I2C            |SDA (screen)       |
+|36 |PA3     |I2C            |SCL (screen)       |
+|40 |PA7     |Output         |beeper on/off      |
+
 IC1, a TLC555 timer IC, delivers a signal to the IC2's pin 25 (PF2) every second. This initiates an interrupt that updates the second timer; checks if minute, hour, day, month, or year need to be updated; checks if the current time matches one of the alarms; and refreshes the LCD screen, if needed.
 
 The beeper circuit is centered around IC3 and IC4, which are two more 555 timers. If pin 40 of IC2 (PA7, an output port) is driven high (i.e., if current time equals one of the alarm times), the beeper circuit's reset is driven high, thus turning it on. The ICs are connected to a speaker, which will emit a tone.
