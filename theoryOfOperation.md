@@ -13,7 +13,7 @@ The beeper circuit is centered around IC3 and IC4, which are two more 555 timers
 
 The clock interface consists of 10 buttons and a 20x4 character LCD screen. The two alarm buttons work as a toggle. When held down, alarm time and/or date will display on the LCD. Changing the time or date via the hour, minute, year, month, or day buttons will change the respective values for the alarm whose button is held down. Alarm1 (repeating alarm) is connected to pin 11 (PD2) and Alarm2 (date-specific alarm) is connected to pin 15 (PD6).
 
-Hour, minute, year, month, and day are the buttons used to change the time and date of the clock. They are connected to IC2's GPIO pins and they all trigger interrupts
+Hour, minute, year, month, and day are the buttons used to change the time and date of the clock. They are connected to IC2's GPIO pins and they all trigger interrupts:
 
 |Function|Pin|Pin Name|
 |--------|---|--------|
