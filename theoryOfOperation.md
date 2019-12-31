@@ -1,6 +1,6 @@
 # Theory of Operation for the Schematic of the Alarm Clock
 
-ICs
+**ICs**
 
 The alarm clock is controlled by IC2, the ATMEGA 4809 microcontroller.
 
@@ -9,14 +9,14 @@ IC1, a TLC555 timer IC, delivers a signal to the IC2's pin 25 (PF2) every second
 The beeper circuit is centered around IC3 and IC4, which are two more 555 timers. If pin 40 of IC2 (PA7) is driven high (i.e., if current time equals one of the alarm times), the beeper circuit's reset is driven high, thus turning it on. The ICs are connected to a speaker, which will emit a tone.
 
 
-Interface
+**Interface**
 
 The clock interface consists of 10 buttons and a 20x4 character LCD screen. The two alarm buttons work as a toggle. When held down, alarm time and/or date will display on the LCD. Changing the time or date via the hour, minute, year, month, or day buttons will change the respective values for the alarm whose button is held down. Alarm1 (repeating alarm) is connected to pin 11 (PD2) and Alarm2 (date-specific alarm) is connected to pin 15 (PD6).
 
-Hour, minute, year, month, and day are the buttons used to change the time and date of the clock. They are connected to IC2's GPIO pins and they all trigger interrupts:
+Hour, minute, year, month, and day are the buttons used to change the time and date of the clock. They are connected to IC2's GPIO pins and they all trigger interrupts
 
 Function  Pin   Pin Name
-========================
+\========================
 Hour      9     PD0
 Minute    10    PD1
 Year      12    PD3
