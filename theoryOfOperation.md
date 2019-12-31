@@ -6,7 +6,7 @@ The alarm clock is controlled by IC2, the ATMEGA 4809 microcontroller.
 
 IC1, a TLC555 timer IC, delivers a signal to the IC2's pin 25 (PF2) every second. This initiates an interrupt that updates the second timer; checks if minute, hour, day, month, or year need to be updated; checks if the current time matches one of the alarms; and refreshes the LCD screen, if needed.
 
-The beeper circuit is centered around IC3 and IC4, which are two more 555 timers. If pin 40 of IC2 (PA7) is driven high (i.e., if current time equals one of the alarm times), the beeper circuit's reset is driven high, thus turning it on. The ICs are connected to a speaker, which will emit a tone.
+The beeper circuit is centered around IC3 and IC4, which are two more 555 timers. If pin 40 of IC2 (PA7, an output port) is driven high (i.e., if current time equals one of the alarm times), the beeper circuit's reset is driven high, thus turning it on. The ICs are connected to a speaker, which will emit a tone.
 
 
 **Interface**
