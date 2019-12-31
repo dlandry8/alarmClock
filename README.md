@@ -19,10 +19,10 @@ Tentative parts list:
 
     - PCB
     - ATMEGA4809 Microcontroller
-    - 7 buttons: hour, minute, alarm, day, month, year, alarm stop.
+    - 10 buttons: hour, minute, alarm1, day, month, year, alarm2, toggle alarm1, toggle alarm2, alarm stop.
     - 1 20x4 LED display
     - 1 speaker and/or alarm IC
-    - 1 32k crystal oscillator
+    - 1 555 timer IC
     - 2 thin wood panels (for front display and top button array)
     - 4 thick wood surfaces (2x4?) (for side panels, back, and bottom)
     - 4 rubber feet
