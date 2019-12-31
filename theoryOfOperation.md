@@ -15,7 +15,7 @@ The clock interface consists of 10 buttons and a 20x4 character LCD screen. The 
 
 Hour, minute, year, month, and day are the buttons used to change the time and date of the clock. They are connected to IC2's GPIO pins and they all trigger interrupts
 
-Function  Pin   Pin Name
+Function  Pin   Pin Name\n
 Hour      9     PD0
 Minute    10    PD1
 Year      12    PD3
